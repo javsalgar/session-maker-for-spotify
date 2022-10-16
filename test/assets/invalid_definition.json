@@ -1,0 +1,9 @@
+{
+  "title": "This is wrong!",
+  "description": "Created with session-maker-for-spotify",
+  "maxSongs": 100,
+  "pattern": [
+    "Test",
+    "Test"
+  ]
+}

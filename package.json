@@ -1,0 +1,29 @@
+{
+  "name": "session-maker-for-spotify",
+  "version": "1.0.0",
+  "description": "Create Spotify sessions using multiple playlists",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "spotify",
+    "session",
+    "playlists"
+  ],
+  "author": "Javier J. Salmeron Garcia",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "commander": "^9.4.1",
+    "jsonschema": "^1.4.1"
+  },
+  "devDependencies": {
+    "chai": "^4.3.6",
+    "eslint": "^8.25.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-airbnb-base": "^0.0.1-security",
+    "eslint-plugin-chai-friendly": "^0.7.2",
+    "eslint-plugin-mocha": "^10.1.0",
+    "mocha": "^10.1.0"
+  }
+}

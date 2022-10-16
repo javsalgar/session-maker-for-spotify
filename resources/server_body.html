@@ -1,0 +1,11 @@
+<script>
+window.onload = function() {
+  const accessToken = window.location.hash.split('&')[0].split('#')[1].split('=')[1];
+  const resElem = document.getElementById('res');
+  resElem.innerText = resElem.innerText.replace(/ACCESS_TOKEN/g, accessToken);
+}
+</script>
+
+<p id="res">Success! Your access token is ACCESS_TOKEN</p>
+
+<p>Authorization correct. Copy the access token above, close this window and go back to the terminal</p>

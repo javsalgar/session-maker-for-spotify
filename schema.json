@@ -1,0 +1,64 @@
+{
+  "$id": "https://example.com/spotify_session_maker.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Session",
+  "type": "object",
+  "required": [
+    "title",
+    "maxSongs",
+    "sources",
+    "pattern"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Session title. Will be translated to a Spotify playlist"
+    },
+    "description": {
+      "type": "string",
+      "description": "Session description"
+    },
+    "spotifyID": {
+      "type": "string",
+      "description": "Existing playlist Spotify ID"
+    },
+    "maxSongs": {
+      "type": "integer",
+      "description": "Maximum amount of songs to use in the playlist, if one of the playlists cannot fulfill it, it will stop"
+    },
+    "sources": {
+      "type": "array",
+      "description": "Source playlists to build the session.",
+      "items": {
+        "$ref": "#/$defs/playlist"
+      }
+    },
+    "pattern": {
+      "description": "Pattern to use from the source playlists to build the session.",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "$defs": {
+    "playlist": {
+      "type": "object",
+      "required": [
+        "name",
+        "spotifyID"
+      ],
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Name to identify the source plalist"
+        },
+        "spotifyID": {
+          "type": "string",
+          "description": "ID inside Spotify of the playlist"
+        }
+      }
+    }
+  }
+}

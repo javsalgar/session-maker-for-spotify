@@ -1,0 +1,27 @@
+{
+  "title": "My awesome SBK Party!",
+  "description": "Created with session-maker-for-spotify",
+  "maxSongs": 200,
+  "sources": [
+    {
+      "name": "Salsa",
+      "spotifyID": "2OsWOxpOhmPUqISvPo8Cph"
+    },
+    {
+      "name": "Bachata",
+      "spotifyID": "7LsJLGdokIxHxcmGMlXB3m"
+    },
+    {
+      "name": "Kizomba",
+      "spotifyID": "2godpxQkfAuR9JRJ7tU5ws"
+    }
+  ],
+  "pattern": [
+    "Salsa",
+    "Salsa",
+    "Bachata",
+    "Bachata",
+    "Kizomba"
+  ]
+}
+

@@ -1,0 +1,9 @@
+#!/bin/bash
+
+SCRIPT="$0"
+if [[ -L "$SCRIPT" ]]; then
+    SCRIPT="$(readlink "$SCRIPT")"
+fi
+
+ROOTDIR="$(cd "$(dirname $0)/.." && pwd)"
+node "${ROOTDIR}/index.js" "$@"
