@@ -5,5 +5,5 @@ if [[ -L "$SCRIPT" ]]; then
     SCRIPT="$(readlink "$SCRIPT")"
 fi
 
-ROOTDIR="$(cd "$(dirname $0)/.." && pwd)"
+ROOTDIR="$(cd "$(dirname "$SCRIPT")/.." && pwd)"
 node "${ROOTDIR}/index.js" "$@"
