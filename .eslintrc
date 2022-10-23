@@ -1,0 +1,93 @@
+{
+  "extends": [
+    "airbnb-base",
+    "plugin:chai-friendly/recommended",
+    "plugin:mocha/recommended"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "script"
+  },
+  "env": {
+    "es6": true,
+    "mocha": true,
+    "node": true,
+    "browser": false
+  },
+  "rules": {
+    "import/extensions": 0,
+    "import/no-cycle": 0,
+    "import/no-unresolved": 0,
+    "import/no-extraneous-dependencies": 0,
+    "mocha/no-setup-in-describe": 0,
+    "mocha/no-exports": 0,
+    "mocha/no-skipped-tests": 0,
+    "comma-dangle": [
+      "error",
+      {
+        "arrays": "always-multiline",
+        "objects": "always-multiline",
+        "imports": "always-multiline",
+        "exports": "always-multiline",
+        "functions": "ignore"
+      }
+    ],
+    "quotes": [
+      2,
+      "single",
+      {
+        "avoidEscape": true,
+        "allowTemplateLiterals": true
+      }
+    ],
+    "no-unneeded-ternary": 0,
+    "func-names": 0,
+    "prefer-rest-params": 0,
+    "prefer-arrow-callback": 0,
+    "arrow-body-style": 0,
+    "space-before-function-paren": [
+      2,
+      "never"
+    ],
+    "newline-per-chained-call": [
+      "error",
+      {
+        "ignoreChainWithDepth": 2
+      }
+    ],
+    "object-curly-spacing": [
+      2,
+      "never"
+    ],
+    "object-shorthand": 0,
+    "no-param-reassign": 0,
+    "no-underscore-dangle": 0,
+    "quote-props": [
+      "error",
+      "consistent-as-needed"
+    ],
+    "no-console": 0,
+    "max-len": [
+      2,
+      {
+        "code": 120
+      }
+    ],
+    "class-methods-use-this": 0,
+    "import/no-dynamic-require": 0,
+    "prefer-destructuring": 0,
+    "no-cond-assign": [
+      "error",
+      "except-parens"
+    ],
+    "strict": [
+      "error",
+      "global"
+    ],
+    "max-classes-per-file": [
+      "error",
+      5
+    ],
+    "prefer-object-spread": 0
+  }
+}

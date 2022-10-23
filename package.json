@@ -1,6 +1,6 @@
 {
   "name": "session-maker-for-spotify",
-  "version": "1.0.2",
+  "version": "2.0.0",
   "description": "Create Spotify sessions using multiple playlists",
   "main": "index.js",
   "scripts": {

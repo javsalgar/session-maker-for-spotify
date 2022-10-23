@@ -5,7 +5,9 @@
   "sources": [
     {
       "name": "Test",
-      "spotifyID": "2OsWOxpOhmPUqISvPo8Cph"
+      "spotifyIDs": [
+        "2OsWOxpOhmPUqISvPo8Cph"
+      ]
     }
   ],
   "pattern": [

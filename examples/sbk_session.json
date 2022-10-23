@@ -5,15 +5,21 @@
   "sources": [
     {
       "name": "Salsa",
-      "spotifyID": "2OsWOxpOhmPUqISvPo8Cph"
+      "spotifyIDs": [
+        "2OsWOxpOhmPUqISvPo8Cph"
+      ]
     },
     {
       "name": "Bachata",
-      "spotifyID": "7LsJLGdokIxHxcmGMlXB3m"
+      "spotifyIDs": [
+        "7LsJLGdokIxHxcmGMlXB3m"
+      ]
     },
     {
       "name": "Kizomba",
-      "spotifyID": "2godpxQkfAuR9JRJ7tU5ws"
+      "spotifyIDs": [
+        "2godpxQkfAuR9JRJ7tU5ws"
+      ]
     }
   ],
   "pattern": [
@@ -24,4 +30,3 @@
     "Kizomba"
   ]
 }
-

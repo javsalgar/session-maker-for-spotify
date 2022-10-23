@@ -4,8 +4,13 @@ const fs = require('fs');
 const https = require('https');
 const {createPlaylist, parseSession} = require('../lib');
 
-async function cmdCreatePlaylist({session, accessToken}) {
-  const definition = parseSession(fs.readFileSync(session), {encoding: 'utf-8'});
+/**
+ * Command for creating the playlist in Spotify
+ * @param  {string} input.sessionPath Path to the session file
+ * @param  {string} input.accessToken Spotify API token for performing operations
+ */
+async function cmdCreatePlaylist({session: sessionPath, accessToken}) {
+  const definition = parseSession(fs.readFileSync(sessionPath), {encoding: 'utf-8'});
 
   console.info('Verifying access token');
   let user;

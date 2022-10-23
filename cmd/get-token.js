@@ -3,7 +3,9 @@
 const fs = require('fs');
 const http = require('http');
 const path = require('path');
-
+/**
+ * Command for obtaining the API token in Spotify
+ */
 async function cmdGetToken() {
   // We will create an embedded server for the callback
   const serverPort = process.env.TOKEN_SERVER_PORT ? process.env.TOKEN_SERVER_PORT : 30008;

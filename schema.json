@@ -29,9 +29,9 @@
     },
     "sources": {
       "type": "array",
-      "description": "Source playlists to build the session.",
+      "description": "Source playlist groups to build the session.",
       "items": {
-        "$ref": "#/$defs/playlist"
+        "$ref": "#/$defs/playlistGroup"
       }
     },
     "pattern": {
@@ -43,20 +43,23 @@
     }
   },
   "$defs": {
-    "playlist": {
+    "playlistGroup": {
       "type": "object",
       "required": [
         "name",
-        "spotifyID"
+        "spotifyIDs"
       ],
       "properties": {
         "name": {
           "type": "string",
-          "description": "Name to identify the source plalist"
+          "description": "Name to identify the playlist group"
         },
-        "spotifyID": {
-          "type": "string",
-          "description": "ID inside Spotify of the playlist"
+        "spotifyIDs": {
+          "type": "array",
+          "description": "IDs inside Spotify of the playlists",
+          "items": {
+            "type": "string"
+          }
         }
       }
     }
