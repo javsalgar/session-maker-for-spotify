@@ -39,18 +39,18 @@ Session maker for Spotify works with session definitions, which are `JSON` files
   "sources": [ <-- Here goes the source playlists you want to use
     {
       "name": "<Internal identifier of playlist>",
-      "spotifyID": "<Spotify ID of the Playlist>"
+      "spotifyIDs": ["<Spotify ID of one or more Playlists>"]
     },
     {
       "name": "<Internal identifier of playlist>",
-      "spotifyID": "<Spotify ID of the Playlist>"
+      "spotifyIDs": ["<Spotify ID of one or more Playlists>"]
     },
     ...
   ],
   "pattern": [
-    "<Playlist Identifier>",
-    "<Playlist Identifier>",
-    "<Playlist Identifier>",
+    "<Source Identifier>",
+    "<Source Identifier>",
+    "<Source Identifier>",
   ]
 }
 ```
@@ -103,15 +103,15 @@ The session definition would look like this:
   "sources": [
     {
       "name": "Salsa",
-      "spotifyID": "2OsWOxpOhmPUqISvPo8Cph"
+      "spotifyIDs": ["2OsWOxpOhmPUqISvPo8Cph"]
     },
     {
       "name": "Bachata",
-      "spotifyID": "7LsJLGdokIxHxcmGMlXB3m"
+      "spotifyIDs": ["7LsJLGdokIxHxcmGMlXB3m"]
     },
     {
       "name": "Kizomba",
-      "spotifyID": "2godpxQkfAuR9JRJ7tU5ws"
+      "spotifyIDs": ["2godpxQkfAuR9JRJ7tU5ws"]
     }
   ],
   "pattern": [

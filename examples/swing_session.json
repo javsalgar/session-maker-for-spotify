@@ -1,0 +1,56 @@
+{
+  "title": "Swing session by BPMs and 10% Blues",
+  "description": "Built with spotify-session-maker",
+  "maxSongs": 200,
+  "sources": [
+    {
+      "name": "100-120",
+      "spotifyIDs": [
+        "7ivzWZParGOFfg6WLurw8E"
+      ]
+    },
+    {
+      "name": "120-140",
+      "spotifyIDs": [
+        "57TmdQaIAxm142Kec2xFrX"
+      ]
+    },
+    {
+      "name": "140-160",
+      "spotifyIDs": [
+        "0V1aG0b9ye5B4MPId1Znj7"
+      ]
+    },
+    {
+      "name": "160-180",
+      "spotifyIDs": [
+        "0Ky3d8TBOOe4VYd0AodaTL"
+      ]
+    },
+    {
+      "name": "Over180",
+      "spotifyIDs": [
+        "3IO3m6mfuDLvBrkpllHlJ6",
+        "1nDCfIMWHQDpChhitrI0sk"
+      ]
+    },
+    {
+      "name": "Blues",
+      "spotifyIDs": [
+        "7kwIt9o0BTtszsl3VVtHPT"
+      ]
+    }
+  ],
+  "pattern": [
+    "100-120",
+    "120-140",
+    "140-160",
+    "160-180",
+    "Over180",
+    "100-120",
+    "120-140",
+    "140-160",
+    "160-180",
+    "Blues"
+  ]
+}
