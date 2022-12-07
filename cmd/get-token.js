@@ -3,6 +3,7 @@
 const fs = require('fs');
 const http = require('http');
 const path = require('path');
+const crypto = require('crypto');
 /**
  * Command for obtaining the API token in Spotify
  */
@@ -12,14 +13,14 @@ async function cmdGetToken() {
 
   // Spotify authorization request parameters
 
+  const randomID = crypto.randomBytes(256).readUInt32BE(0, 6) % 10000;
   const authorizeURL = new URL('https://accounts.spotify.com/authorize');
   authorizeURL.search = new URLSearchParams({
     client_id: '6a10ce9a05774206980000f0f7f6dbc4',
     response_type: 'token',
     redirect_uri: `http://127.0.0.1:${serverPort}/callback`,
     scope: ['playlist-modify-public', 'playlist-modify-private'],
-    state: `session-maker-for-spotify-${Math.random().toString(36)
-      .slice(2)}`,
+    state: `session-maker-for-spotify-${randomID}`,
     show_dialog: true,
   });
 
